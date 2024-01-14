@@ -55,16 +55,27 @@ document.querySelector('#app').innerHTML = `
 
 let outputScreen = document.querySelector('#display')
 let allButtons = document.querySelectorAll('button')
+let equals = document.querySelector('#equals');
+
 let number = '';
+let result = '';
 
 allButtons.forEach((btn) => {
   btn.addEventListener('click', (e) => {
     if(e.target){
-      number += e.target.textContent
-      outputScreen.textContent = number
+      number += e.target.textContent == '='? '':e.target.textContent
+      outputScreen.textContent = number  
     }
   })
 })
 
+
+function culc(num){
+  result = String(eval(num))
+  return result;
+}
+equals.addEventListener('click', () => culc(number)) 
+outputScreen.textContent = ''
+outputScreen.textContent = result
 
 setupCounter(document.querySelector('#counter'))
