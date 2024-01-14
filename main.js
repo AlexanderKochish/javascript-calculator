@@ -28,6 +28,13 @@ document.querySelector('#app').innerHTML = `
   <div class="calculator">
   <div class="outputScreen" id="display">0</div>
   <div>
+  <button>AC</button>
+  <button>/</button>
+  <button>*</button>
+  <button>-</button>
+  <button>+</button>
+  <button>=</button>
+  <button>.</button>
   <button>0</button>
   <button>1</button>
   <button>2</button>
