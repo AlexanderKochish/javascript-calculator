@@ -54,7 +54,17 @@ document.querySelector('#app').innerHTML = `
 `
 
 let outputScreen = document.querySelector('#display')
+let allButtons = document.querySelectorAll('button')
+let number = '';
 
-outputScreen.textContent = 5
+allButtons.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    if(e.target){
+      number += e.target.textContent
+      outputScreen.textContent = number
+    }
+  })
+})
+
 
 setupCounter(document.querySelector('#counter'))
