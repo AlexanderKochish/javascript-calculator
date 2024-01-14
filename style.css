@@ -33,9 +33,17 @@
   justify-content: center;
 }
 .calculator {
-  background-color: #242424;
+  background-color: #1a1a1a;
+  padding: 10px;
   width: 400px;
   border-radius: 4px;
   min-height: 500px;
   box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+.outputScreen {
+  background-color: black;
+  color: #ffff;
+  min-height: 50px;
+  padding: 5px;
 }
