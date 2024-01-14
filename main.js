@@ -33,7 +33,6 @@ document.querySelector('#app').innerHTML = `
             <button id="multiply">*</button>
             <button>-</button>
             <button>+</button>
-            
             <div class="btns">
             <button>1</button>
             <button>2</button>
@@ -53,5 +52,9 @@ document.querySelector('#app').innerHTML = `
     </div>
   </div>
 `
+
+let outputScreen = document.querySelector('#display')
+
+outputScreen.textContent = 5
 
 setupCounter(document.querySelector('#counter'))
