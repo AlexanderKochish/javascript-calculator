@@ -27,10 +27,10 @@ document.querySelector('#app').innerHTML = `
   <div class="container">
   <div class="calculator">
   <div class="outputScreen" id="display">0</div>
-  <div>
-  <button>AC</button>
-  <button>/</button>
-  <button>*</button>
+  <div class="btns-container">
+  <button id="allClear">AC</button>
+  <button id="divide">/</button>
+  <button id="multiply">*</button>
   <button>-</button>
   <button>+</button>
   <button>=</button>
