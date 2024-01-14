@@ -24,32 +24,33 @@ import { setupCounter } from './counter.js'
 
 document.querySelector('#app').innerHTML = `
   <div class="wrapper">
-  <div class="container">
-  <div class="calculator">
-  <div class="outputScreen" id="display">0</div>
-  <div class="btns-container">
-  <button id="allClear">AC</button>
-  <button id="divide">/</button>
-  <button id="multiply">*</button>
-  <button>-</button>
-  <button>+</button>
-  <button>=</button>
-  <div>
-  <button>1</button>
-  <button>2</button>
-  <button>3</button>
-  <button>4</button>
-  <button>5</button>
-  <button>6</button>
-  <button>7</button>
-  <button>8</button>
-  <button>9</button>
-  <button>0</button>
-  <button>.</button>
-  </div>
-  </div>
-  </div>
-  </div>
+    <div class="container">
+      <div class="calculator">
+        <div class="outputScreen" id="display">0</div>
+          <div class="btns-container">
+            <button id="allClear">AC</button>
+            <button id="divide">/</button>
+            <button id="multiply">*</button>
+            <button>-</button>
+            <button>+</button>
+            
+            <div class="btns">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>0</button>
+            <button>.</button>
+            <button id="equals">=</button>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
 `
 

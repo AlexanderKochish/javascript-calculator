@@ -35,7 +35,7 @@
 .calculator {
   background-color: #1a1a1a;
   padding: 10px;
-  width: 400px;
+  width: 350px;
   border-radius: 4px;
   min-height: 400px;
   box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.4);
@@ -44,7 +44,7 @@
 .outputScreen {
   background-color: black;
   color: #ffff;
-  min-height: 50px;
+  min-height: 70px;
   padding: 5px;
 }
 
@@ -53,17 +53,29 @@
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding: 10px 2px;
+}
+
+.btns-container button {
+  margin: 3px;
 }
 
 #allClear {
   background: #871400;
-  width: 180px;
+  width: 102px;
   height: 70px;
 }
-
+.btns button {
+  margin: 5px;
+  width: 95px;
+  height: 55px;
+}
 button {
-  padding: 25px;
+  padding: 10px 19px;
   cursor: pointer;
   font-size: 18px;
-  margin: 5px;
+}
+
+#equals {
+  background-color: rgb(41, 159, 249);
 }
