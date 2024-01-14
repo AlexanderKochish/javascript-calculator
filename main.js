@@ -34,8 +34,7 @@ document.querySelector('#app').innerHTML = `
   <button>-</button>
   <button>+</button>
   <button>=</button>
-  <button>.</button>
-  <button>0</button>
+  <div>
   <button>1</button>
   <button>2</button>
   <button>3</button>
@@ -45,6 +44,9 @@ document.querySelector('#app').innerHTML = `
   <button>7</button>
   <button>8</button>
   <button>9</button>
+  <button>0</button>
+  <button>.</button>
+  </div>
   </div>
   </div>
   </div>
