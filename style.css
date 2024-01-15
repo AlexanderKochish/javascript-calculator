@@ -44,7 +44,7 @@
 .outputScreen {
   background-color: black;
   color: #ffff;
-  min-height: 80px;
+  min-height: 85px;
   padding: 5px 10px;
   display: flex;
   flex-direction: column;

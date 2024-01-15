@@ -37,31 +37,42 @@ document.addEventListener("DOMContentLoaded", () => {
   let buttonsParent = document.querySelector("#btns-parent");
   let equals = document.querySelector("#equals");
   let allClear = document.querySelector("#allClear");
-  let displayResults = document.querySelector('#display-results')
+  let displayResults = document.querySelector("#display-results");
 
   let number = "";
   let result = "";
   outputScreen.textContent = "0";
 
   buttonsParent.addEventListener("click", (e) => {
-      if (e.target) {
-        switch (e.target.textContent) {
-          case "=":
-            return "";
-          case "AC":
-            return "";
-          default:
-            (number += e.target.textContent == "=" ? "" : e.target.textContent),
-            (outputScreen.textContent = number);
+    if (e.target) {
+      switch (e.target.textContent) {
+        case "=":
+          return "";
+        case "AC":
+          return "";
+        default:
+          (number += e.target.textContent == "=" ? "" : e.target.textContent),
+            (outputScreen.textContent =
+              number.length >= 22
+                ? (outputScreen.textContent = "DIGIT LIMIT MET")
+                : (outputScreen.textContent = number));
           return;
-        }
       }
-    });
+    }
+  });
 
   function culc(num) {
-    result = String(eval(num));
-    displayResults.textContent = result;
-    return result;
+    if (!num) {
+      return;
+    }
+    let regex = /[0-9-\+*/]/g;
+    if (regex.test(num)) {
+      result = String(eval(num));
+      displayResults.textContent = result;
+      return result;
+    } else {
+      return;
+    }
   }
 
   equals.addEventListener("click", () => culc(number));
